@@ -1,0 +1,32 @@
+/* DIVS ID */
+#divAdd {
+    background-color: darkseagreen;
+}
+
+#divLista {
+    background-color: lightblue;
+}
+
+/* DIVS ID PRIORIDADES */
+.prioridade-baixa {
+    background-color: darkturquoise; 
+}
+
+.prioridade-media {
+    background-color: dodgerblue; 
+}
+
+.prioridade-alta {
+    background-color: midnightblue; 
+    text-decoration-color: white;
+}
+
+/* DIVS CLASS */
+.tarefa {
+    /* margin-left: 20%; */
+}
+
+.descTarefa {
+    display: inline;
+    text-decoration-color: white;
+}
