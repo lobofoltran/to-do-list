@@ -1,66 +1,48 @@
 <!DOCTYPE html>
 <html lang="PT-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To Do List</title>
-    <link rel="icon" href="favicon.ico"/>
+    <link rel="icon" href="favicon.ico" />
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 </head>
+
 <body>
-
-    <!-- <input type="text" placeholder="Nome da Tarefa" maxlength="10" minlength="2" id="tarefaNome"> -->
-
     <!-- Div - Adicionar tarefas -->
-    <div id="divAdd" class="container">
+    <div id="divAdd" class="container clearfix">
         <center>
-        <!-- <textarea name="" id="" cols="30" rows="2"></textarea> -->
-        <input type="text" placeholder="Nome da Tarefa" maxlength="10" minlength="2" id="tarefaNome">
-        <select name="" id="">
-            <option value="prioridade-baixa">Prioridade Baixa</option>
-            <option value="prioridade-media">Prioridade Média</option>
-            <option value="prioridade-alta">Prioridade Alta</option>
-        </select>
-        <button type="button" class="btn btn-success" id="">Adicionar</button></center>
+            <!-- <textarea name="" id="" cols="30" rows="2" id="descricaoTarefa"></textarea> -->
+            <input type="text" placeholder="Nome da Tarefa" maxlength="100" minlength="2" id="descricaoTarefa"> 
+            <span class="span-erro" id="erroDescricao"></span>
+            <select name="" id="prioridadeTarefa">
+                <option value="prioridade-baixa">Prioridade Baixa</option>
+                <option value="prioridade-media">Prioridade Média</option>
+                <option value="prioridade-alta">Prioridade Alta</option>
+            </select>
+            <button onclick="fabricaTarefas()" type="button" class="btn btn-success">Adicionar</button>
+        </center>
     </div>
     <hr>
+
     <!-- Div - Listar tarefas  -->
-    <div id="divLista" class="container"> 
-
-        <!-- Representa um elemento da lista -->
-        <div class="tarefa prioridade-alta">
-            <center><p class="descTarefa"> Estudar para as provas </p>
-            <button type="button" class="btn btn-danger">Excluir</button>
-            <input type="checkbox" name="" id=""></center>
-
-        </div>
-
-        <!-- Representa um elemento da lista -->
-        <div class="tarefa prioridade-media">
-            <center><p class="descTarefa"> Estudar para as provas </p>
-            <button type="button" class="btn btn-danger">Excluir</button>
-            <input type="checkbox" name="" id=""></center>
-
-        </div>
-
-        <!-- Representa um elemento da lista -->
-        <div class="tarefa prioridade-baixa">
-            <center><p class="descTarefa"> Estudar para as provas </p>
-            <button type="button" class="btn btn-danger">Excluir</button>
-            <input type="checkbox" name="" id=""></center>
-
-        </div>
-        
+    <div id="divLista" class="container clearfix">
     </div>
 
-
-    
-
-<script src="app.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+        integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+        integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
