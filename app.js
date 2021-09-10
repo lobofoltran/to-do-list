@@ -1,6 +1,6 @@
 function validaTamanhoTexto() {
     let descricao = documento.getElementById('descricaoTarefa')
-    if (descricao.value.length > 3) {
+    if (descricao.value.length < 3) {
         document.getElementById('erroDescricao').style.display = 'block'
         alert("Erro!")
     } else {
@@ -20,7 +20,6 @@ function fabricaTarefas() {
         prioridade: prioridade
     };
     listaTarefas.push(tarefa);
-    alert("Tarefa criada");
     renderLista();
 }
 
@@ -28,17 +27,21 @@ function renderLista() {
     let divLista = document.getElementById('divLista');
     let template = '';
     for (let i = 0; i < listaTarefas.length; i++) {
-        template += `<div class="tarefa ${listaTarefas[i].prioridade}"><center>
+        template += `<div id="listaTarefas $[i]" class="tarefa ${listaTarefas[i].prioridade}"><center>
                 <p class="descTarefa"> ${listaTarefas[i].descricao}  </p>
                 <button onclick="excluirTarefa()" type="button" class="btn btn-danger">Excluir</button>
-                <input type="checkbox" name="" id=""></center>
-                </div>`;     
+                <input type="checkbox" name="" id="checkboxTarefas $[i]" onclick="marcarTarefa()"></center>
+                </div>`;
     }
     divLista.innerHTML = template;
 }
 
-function excluirTarefa(i) {
-    var divLista = document.getElementById('divLista');
-    divLista.parentNode.removeChild(divLista);
-    renderLista();
+function excluirTarefa() {
+    var elemento = document.getElementById('listaTarefas $[i]');
+    elemento.parentNode.removeChild(elemento);
+}
+
+function marcarTarefa() {
+var TacharElemento = document.getElementById('listaTarefas $[i]');
+TacharElemento.parentNode.textContent(String)
 }
