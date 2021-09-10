@@ -27,9 +27,15 @@
     font-size: large;
 }
 
+.divTacha {
+    text-decoration: line-through;
+}
+
 /* DIVS CLASS */
 
 .descTarefa {
     display: inline;
     text-decoration-color: white;
 }
+
+
