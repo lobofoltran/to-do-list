@@ -1,39 +1,100 @@
+body {
+    background-color: lightblue;
+}
+
 #divAdd {
+    background-color: rgba(140, 224, 217, 0.705);
     text-align: center;
-    background-color: darkseagreen;
+    font-family: sans-serif;
+    border: 0.1em rgb(117, 172, 112) solid;
 }
 
 #divLista {
     text-align: center;
-    background-color: lightblue;
+}
+
+#descricaoTarefa {
+    margin: 10px;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+#prioridadeTarefa {
+    margin-left: 1em;
+    margin-right: 5em;
+    font-size: 20px;
+    font-family: sans-serif;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.botaoAdd {
+    background-color: rgb(17, 165, 62);
+    border-color: rgb(50, 184, 23);
+    padding: 0.1em 2em;
+    color: white;
+    margin: 10px;
+    font-size: 20px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.botaoAdd:hover {
+    background-color: rgb(36, 124, 43);
+    border-color: rgb(56, 148, 37);
+}
+
+.botaoExcluir {
+    background-color: rgb(240, 44, 44);
+    border-color: rgb(226, 14, 14);
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    margin-left: 5%;
+    padding: 0.1em 1em;
+    cursor: pointer;
+}
+
+.botaoExcluir:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(104, 9, 9);
+    border-color: rgb(97, 14, 14);
+}
+
+.container {
+    max-width: 1500px;
+    margin: 0px auto;
+    border: 1px solid #ccc;
 }
 
 .prioridade-baixa {
-    background-color: rgb(116, 209, 252);
-    color: white;
-    font-size: large;
+    background-color: rgba(47, 255, 75, 0.658);
+    color: black;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 20px;
 }
 
 .prioridade-media {
-    background-color: rgb(68, 149, 255); 
-    color: white;
-    font-size: large;
+    background-color: rgba(225, 236, 71, 0.733); 
+    color: black;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 20px;
 }
 
 .prioridade-alta {
-    background-color: rgb(72, 105, 255); 
-    text-decoration-color: white;
-    color: white;
-    font-size: large;
+    background-color: rgb(245, 255, 112); 
+    color: black;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 20px;
 }
 
 .descTarefa {
+    margin-top: 50px;
     display: inline;
-    text-decoration-color: white;
+    text-decoration-color: rgb(255, 0, 0);
 }
 
 .tarefaConcluida {
     text-decoration: line-through black;
 }
-
-

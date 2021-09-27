@@ -6,7 +6,7 @@ https://lobofoltran.github.io/da-to-do-list/
 
 <p align="center">
 
-![alt text](https://i.imgur.com/7FKHyX8.png)
+![alt text]()
 
 </p>
 
