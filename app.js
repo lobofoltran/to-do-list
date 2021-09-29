@@ -7,6 +7,11 @@ const localStorage = window.localStorage;
 function fabricaTarefas() {
     let textoDaTarefa = document.getElementById('descricaoTarefa').value;
     let prioridadeSelecionada = document.getElementById('prioridadeTarefa').value;
+    // Validador de selecione, se estiver em selecione, abre o alert e retorna falso. Não executa o restante.
+    if (prioridadeSelecionada = "selecione") {
+        alert('Selecione uma prioridade!')
+        return false;
+    }
     let tarefa = {
         descricao: textoDaTarefa,
         status: "aberto",
